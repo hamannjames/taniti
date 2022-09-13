@@ -2,10 +2,69 @@
 <html>
   <head>
     <title>Welcome to Taniti!</title>
+    <link rel="stylesheet" href="assets/normalize.css">
     <link rel="stylesheet" href="assets/style.css">
     <script src="assets/script.js"></script>
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=open-sans:400,400i,700,700i" rel="stylesheet" />
   </head>
   <body>
-    <h1>Welcome to Taniti</h1>
+    <div class="site-wrapper">
+      <div class="drawer-wrapper open">
+        <div class="drawer-container">
+          <button>Close</button>
+          <ul>
+            <li><a href="attractions">Attractions</a></li>
+            <li>Lodging</li>
+            <li>Restaurants</li>
+            <li>Transporation</li>
+            <li>Nightlife</li>
+            <li>Natural Features</li>
+          </ul>
+        </div>
+      </div>
+      <nav>
+        <div class="nav-container">
+          <div class="logo">Taniti</div>
+          <a href="my-trip" class="my-trip-link">My Trip <img src="assets/icons/person.png"></a>
+          <button class="hamburger"><img src="assets/icons/menu.png"></button>
+        </div>
+      </nav>
+      <div class="hero">
+        <h1>For Fun, Family, and Friends, Visit Taniti!</h1>
+      </div>
+      <div class="content">
+        <div class="section featured">
+          <h2 class="section-title">Snorkel Cove</h2>
+          
+            <figure class="featured-image">
+              <a href="attractions/snorkel-cove.html"><img src="./assets/images/snorkel.jpg"></a>
+              
+            </figure>
+          
+          <a href="attractions/snorkel-cove.html" class="cta">Check It Out!</a>
+          
+        </div>
+  
+        <div class="section featured">
+          <h2 class="section-title">Hotel 1</h2>
+          
+            <figure class="featured-image">
+              <img src="./assets/images/hotel1.jpg">
+              
+            </figure>
+          
+          <a href="#" class="cta">Book It!</a>
+          
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-container">
+          <div class="logo">Taniti</div>
+          <a href="my-trip" class="my-trip-link">My Trip</a>
+        </div>
+      </div>
+    </div>
+    <script src="assets/footer.js"></script>
   </body>
 </html>

@@ -1,4 +1,290 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+html {
+  font-size: 62.25%;
+  --primary-color: #f57814;
+  --secondary-color: #768ec5;
+  --action-color: #ec4d30;
+  --grey-color: #333;
+}
+
 body {
   max-width: 400px;
   margin: 0 auto;
+  font-size: 1.8rem;
+  box-sizing: content-box;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  color: var(--grey-color, #333);
+}
+
+.site-wrapper {
+  position: relative;
+  overflow-x:hidden;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.nav-container:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url('./images/beach.jpg');
+  opacity: 0.3;
+  background-size: cover;
+  background-position: center;
+}
+
+.nav-container > * {
+  position: relative;
+}
+
+.nav-container > *:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.nav-container img {
+  max-width: 2.4rem;
+}
+
+.nav-container a {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.nav-container a img {
+  margin-left: .5rem;
+}
+
+.logo {
+  font-size: 2.4rem;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.hero {
+  background-image: url('./images/beach\ kid.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 18vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  padding: 1rem;
+  background-color: rgba(116, 116, 116, 0.5);
+  max-width: 80%;
+}
+
+.my-trip-link {
+  position: relative;
+}
+
+.my-trip-link.has-item::after {
+  content: "!";
+  background-color: var(--action-color, #ec4d30);
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  font-size: .8rem;
+  color: #fff;
+  top: -.5rem;
+  right: -.5rem;
+}
+
+.content {
+  position: relative;
+}
+
+.content:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url('./images/sunset.jpg');
+  opacity: 0.2;
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+.content > * {
+  position: relative;
+}
+
+.footer {
+  position: relative;
+}
+
+.footer:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url('./images/beach.jpg');
+  opacity: 0.3;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer > * {
+  position: relative;
+}
+
+.footer-container {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.section-title {
+  margin-top: 0;
+  text-align: center;
+  font-weight: normal;
+  font-size: 2.4rem;
+}
+
+.section > * {
+  margin-bottom: 2rem;
+}
+
+.featured-image {
+  position: relative;
+  height: 0;
+  max-width: 100%;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  display: block;
+}
+
+figure {
+  margin: 0;
+}
+
+.featured-image img {
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  max-width: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cta {
+  background-color: var(--action-color, #ec4d30);
+  padding: 1rem;
+  color: #fff;
+  transition: all ease .3s;
+  border: 1px solid var(--action-color, #ec4d30);
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #bbb;
+}
+.cta:hover {
+  background-color: transparent;
+  color: var(--action-color, #3c4d30);
+  text-decoration: none;
+}
+
+.featured {
+  text-align: center;
+}
+
+.section:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.drawer-wrapper {
+  position: absolute;
+  left: 100%;
+  transition: all ease .3s;
+  transform: translateX(0);
+  height: 100%;
+  z-index: 100;
+  background-color: #333;
+}
+
+.drawer-wrapper.open {
+  transform: translateX(-100%);
+}
+
+.drawer-container {
+  padding: 1rem;
+  color: #fff;
+}
+
+.drawer-container ul {
+  text-align: right;
+}
+
+.drawer-container a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  transition: color ease .3s;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--action-color, #ec4d30);
+}
+
+.drawer-container a:hover {
+  text-decoration: underline;
+  color: #ec4d30;
+}
+
+.drawer-container li {
+  list-style: none;
+}
+
+.drawer-container li + li {
+  margin-top: 1rem;
+}
+
+.drawer-container button {
+  padding: .5rem;
+  background-color: #fff;
 }
