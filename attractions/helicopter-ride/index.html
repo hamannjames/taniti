@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Taniti!</title>
+    <link rel="stylesheet" href="../../assets/normalize.css">
+    <link rel="stylesheet" href="../../assets/style.css">
+    <script src="../../assets/script.js"></script>
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=open-sans:400,400i,700,700i" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <div class="drawer-wrapper">
+        <div class="drawer-container">
+          <button>Close</button>
+          <ul>
+            <li><a href="../../attractions">Attractions</a></li>
+            <li>Lodging</li>
+            <li>Restaurants</li>
+            <li>Transporation</li>
+            <li>Nightlife</li>
+            <li>Natural Features</li>
+          </ul>
+        </div>
+      </div>
+      <nav>
+        <div class="nav-container">
+          <div class="logo"><a href="../../">Taniti</a></div>
+          <a href="my-trip" class="my-trip-link">My Trip <img src="../../assets/icons/person.png"></a>
+          <button class="hamburger"><img src="../../assets/icons/menu.png"></button>
+        </div>
+      </nav>
+      <div class="banner" style="background-image: url('../../assets/images/helicopter.jpg')">
+        <h1>Helicopter</h1>
+      </div>
+      <div class="content">
+        <div class="section attraction-info">
+          <div class="attraction-info-top">
+            <h2>About</h2>
+            <button class="cta"></button>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus augue sed metus vulputate, id mollis lectus sodales. Suspendisse tempor neque ac interdum accumsan. Proin mattis odio ut ex aliquam, et dapibus nulla volutpat. Ut sit amet eros eu est luctus cursus non id dolor.
+          </p>
+          <div class="attraction-info-meta">
+            <ul>
+              <li>
+                Rating: 5/5
+              </li>
+              <li>
+                Cost: $60
+              </li>
+              <li>
+                Hours: 8AM - 9PM
+              </li>
+            </ul>
+            <div class="attraction-info-pic">
+              <figure class="featured-image">
+                <img src="../../assets/images/helicopter.jpg">
+              </figure>
+            </div>
+            
+          </div>
+        </div>
+        <div class="section">
+          <h2 class="section-title">Recommended Hotels</h2>
+          <div class="row attractions" data-filtered="1">
+            
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-container">
+          <div class="logo">Taniti</div>
+          <a href="../../my-trip" class="my-trip-link">My Trip</a>
+        </div>
+      </div>
+    </div>
+    <script>
+      const attractionId = 3;
+    </script>
+    <script src="../../assets/footer.js"></script>
+    <script src="../../assets/attraction.js"></script>
+  </body>
+</html>

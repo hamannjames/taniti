@@ -67,7 +67,7 @@ const lodging = [
   {
     name: "Hostel",
     id: 3,
-    distance: [6, 5, 1, 3, 3],
+    distance: [6, 1, 5, 3, 3],
     pic: "hostel.jpg"
   }
 ];

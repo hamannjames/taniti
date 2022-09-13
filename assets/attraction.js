@@ -11,8 +11,8 @@ if (myTrip.attractions.includes(attractionId + '')) {
 button.addEventListener('click', e => {
   e.stopPropagation();
   
-  if (myTrip.attractions.includes(attractionId)) {
-    const index = myTrip.attractions.indexOf(attractionId);
+  if (myTrip.attractions.includes(attractionId + '')) {
+    const index = myTrip.attractions.indexOf(attractionId + '');
     myTrip.attractions = myTrip.attractions.slice(0, index).concat(myTrip.attractions.slice(index + 1));
     localStorage.setItem('attractions', JSON.stringify(myTrip.attractions));
     button.innerText = 'Add To Trip';
