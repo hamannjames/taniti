@@ -2,8 +2,6 @@
   box-sizing: border-box;
 }
 
-
-
 html {
   font-size: 62.25%;
   --primary-color: #f57814;
@@ -13,19 +11,21 @@ html {
 }
 
 body {
-  max-width: 400px;
-  margin: 0 auto;
   font-size: 1.8rem;
-  box-sizing: content-box;
-  border: 1px solid #000;
-  border-radius: 5px;
   font-family: "Open Sans", sans-serif;
   color: var(--grey-color, #333);
 }
 
 .site-wrapper {
+  border-radius: 5px;
+  border: 1px solid #000;
+  box-sizing: content-box;
   position: relative;
-  overflow-x:hidden;
+  overflow:hidden;
+  max-width: 390px;
+  max-height: 844px;
+  margin: 0 auto;
+  overflow-y:scroll;
 }
 
 .nav-container {
@@ -86,13 +86,13 @@ button {
   background-image: url('./images/beach\ kid.jpg');
   background-size: cover;
   background-position: center;
-  min-height: 18vw;
+  height: 20rem;
   display: flex;
   align-items: flex-end;
   justify-content: center;
 }
 
-.hero h1 {
+.hero h1, .banner h1 {
   font-size: 2.4rem;
   color: #fff;
   text-align: center;
@@ -264,6 +264,7 @@ figure {
 a {
   text-decoration: none;
   transition: color ease .3s;
+  color: inherit;
 }
 
 a:hover {
@@ -287,4 +288,42 @@ a:hover {
 .drawer-container button {
   padding: .5rem;
   background-color: #fff;
+}
+
+.banner {
+  height: 10rem;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.row .attraction {
+  width: calc(50% - 2rem);
+  margin: 1rem 1rem 2rem 1rem;
+}
+
+.attraction a {
+  color: #ec4d30;
+}
+
+.attraction .meta ul {
+  padding-left: 0;
+}
+
+.attraction .meta ul li {
+  list-style: none;
+  font-size: 1.6rem;
+}
+
+.attraction .meta .cta {
+  font-size: 1.6rem;
 }

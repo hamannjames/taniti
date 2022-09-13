@@ -2,42 +2,52 @@ const attractions = [
   {
     id: 1,
     name: "Snorkel Cove",
+    url: 'snorkel-cove',
     cost: 5000,
     hours: "8AM - 6PM",
     pic: "snorkel.jpg",
-    tags: "Family Friendly, Daytime, Water, Beach"
+    tags: "family-friendly,daytime,beach",
+    rating: 4.9
   },
   {
     id: 2,
     name: "Zipline",
+    url: 'zipline',
     cost: 2000,
     hours: "8AM - 6PM",
     pic: "zipline.jpg",
-    tags: "Family Friendly, Daytime, Rainforest"
+    tags: "family-friendly,daytime,rainforest",
+    rating: 4
   },
   {
     id: 3,
     name: "Helicopter Ride",
+    url: 'helicopter-ride',
     cost: 6000,
     hours: "8AM - 9PM",
     pic: "helicopter.jpg",
-    tags: "City, Rainforest, Beach, Daytime, Nighttime"
+    tags: "city,rainforest,beach,daytime,nighttime",
+    rating: 5
   },
   {
     id: 4,
     name: "Brewery Tour",
+    url: 'brewery-tour',
     cost: 4000,
     hours: "4PM - 11:30PM",
     pic: "brewery.jpg",
-    tags: "City, Nighttime"
+    tags: "city,nighttime",
+    rating: 3.9
   },
   {
     id: 5,
     name: "Museum",
+    url: 'museum',
     cost: 4000,
     hours: "9AM-7PM",
-    pic: "musuem.jpg",
-    tags: "City, Daytime, Family Friendly"
+    pic: "museum.jpg",
+    tags: "city,daytime,family-friendly",
+    rating: 4.2
   }
 ];
 
@@ -61,7 +71,7 @@ const lodging = [
 
 const myTrip = {};
 if (localStorage.getItem('attractions')) {
-  myTrip.attractions = JSON.parse(localStorage.getItem(attractions));
+  myTrip.attractions = JSON.parse(localStorage.getItem('attractions'));
 } else {
   myTrip.attractions = [];
 }
