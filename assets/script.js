@@ -54,16 +54,19 @@ const attractions = [
 const lodging = [
   {
     name: "Hotel 1",
+    id: 1,
     distance: [3, 4, 2, 1, 1],
     pic: "hotel1.jpg"
   },
   {
     name: "Hotel 2",
+    id: 2,
     distance: [1, 2, 6, 3, 3],
     pic: "hotel2.jpg"
   },
   {
     name: "Hostel",
+    id: 3,
     distance: [6, 5, 1, 3, 3],
     pic: "hostel.jpg"
   }

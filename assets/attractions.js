@@ -17,7 +17,7 @@ const setButtons = () => {
           el.classList.remove('has-item');
         });
       } else {
-        myTrip.attractions.push(id);
+        myTrip.attractions.push(id + '');
         localStorage.setItem('attractions', JSON.stringify(myTrip.attractions));
         e.target.innerText = 'Remove From Trip';
         if (!myTrip.attractions.length && !myTrip.lodging) {

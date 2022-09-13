@@ -327,3 +327,34 @@ a:hover {
 .attraction .meta .cta {
   font-size: 1.6rem;
 }
+
+.attraction-info-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.attraction-info-top h2 {
+  font-size: 2.2rem;
+}
+
+.attraction-info-meta {
+  display: flex;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  flex-wrap: wrap;
+}
+
+.attraction-info-meta > * {
+  margin: 1rem;
+  width: calc(50% - 2rem);
+}
+
+.attraction-info-meta ul {
+  padding-left: 0;
+  font-size: 1.6rem;
+}
+
+.attraction-info-meta li {
+  list-style-type: none;
+}
