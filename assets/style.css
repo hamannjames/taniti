@@ -358,3 +358,17 @@ a:hover {
 .attraction-info-meta li {
   list-style-type: none;
 }
+
+.attraction h3 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+.row p {
+  margin: 1rem;
+}
+
+.row p a {
+  color: #ec4d30;
+}

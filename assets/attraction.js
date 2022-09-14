@@ -37,7 +37,7 @@ const createLodging = (a) => {
   meta.classList.add('meta');
   meta.dataset.id = a.id;
   const ul = document.createElement('ul');
-  ul.innerHTML = '<li>Distance: ' + a.distance[attractionId - 1] + '</li>'
+  ul.innerHTML = '<li>Distance: ' + a.distance[attractionId - 1] + '</li><li>Price: $' + Math.floor(a.price / 100) + '</li>'
   meta.appendChild(ul);
   const cta = document.createElement('button');
   cta.classList.add('cta');
